@@ -1,0 +1,2 @@
+myobject object1 import "other.thingml"
+object1.port1

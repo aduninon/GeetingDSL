@@ -1,0 +1,14 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+import "http://www.thingml.org/xtext/ThingML" as thingml
+
+
+Model:
+	(myObject+=MyObject | myPort+=MyPort)*;
+	
+MyObject:
+	'myobject' name=ID 'import' importPath=STRING;
+MyPort:
+	object=[MyObject] '.' port=[thingml::Port]
+;

@@ -1,0 +1,14 @@
+thing thing1{
+	message message1()
+	provided port port1 {
+		sends message1
+	}
+	statechart thing1 init state1 {
+		state state1 {}
+	}
+}
+protocol X;
+configuration thing1Cfg {
+	instance thing1Inst:thing1
+	connector thing1Inst.port1 over X
+}
