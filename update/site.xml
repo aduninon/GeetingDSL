@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/mydsl_1.0.0.201905310654.jar" id="mydsl" version="1.0.0.201905310654"/>
+</site>

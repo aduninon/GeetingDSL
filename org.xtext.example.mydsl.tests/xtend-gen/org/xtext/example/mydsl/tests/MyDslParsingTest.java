@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.testing.InjectWith;
-import org.eclipse.xtext.testing.extensions.InjectionExtension;
 import org.eclipse.xtext.testing.util.ParseHelper;
 import org.eclipse.xtext.testing.validation.ValidationTestHelper;
 import org.eclipse.xtext.util.StringInputStream;
@@ -27,8 +26,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.xtext.example.mydsl.myDsl.Model;
 import org.xtext.example.mydsl.tests.DSLMyProvider;
 
-@ExtendWith(InjectionExtension.class)
-@InjectWith(DSLMyProvider.class)
+/* @ExtendWith(/* name is null */) */@InjectWith(DSLMyProvider.class)
 @SuppressWarnings("all")
 public class MyDslParsingTest {
   @Inject
